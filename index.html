@@ -3,114 +3,138 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Resumen de Compra - Conan Gray</title>
+  <title>Ticketmaster - Confirmación de Compra</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f7f7f7;
+      background-color: #f4f4f4;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       margin: 0;
       padding: 0;
+      color: #333;
     }
-
-    .container {
-      max-width: 600px;
-      margin: 40px auto;
-      background-color: white;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      border-radius: 8px;
+    .wrapper {
+      max-width: 650px;
+      margin: 30px auto;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
       overflow: hidden;
     }
-
     .header {
-      background-color: #0071ce;
+      background-color: #005eb8;
       color: white;
       padding: 20px;
       text-align: center;
     }
-
     .header h1 {
       margin: 0;
-      font-size: 22px;
+      font-size: 24px;
+      font-weight: normal;
     }
-
-    .content {
+    .event-info {
+      display: flex;
+      flex-wrap: wrap;
       padding: 20px;
+      border-bottom: 1px solid #eee;
     }
-
-    .section {
-      margin-bottom: 20px;
-    }
-
-    .section h2 {
-      font-size: 18px;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 5px;
-      margin-bottom: 10px;
-    }
-
-    .info {
-      margin: 5px 0;
-    }
-
-    .label {
-      font-weight: bold;
-      color: #333;
-    }
-
-    .footer {
-      background-color: #eee;
+    .album-art {
+      flex: 0 0 100%;
+      margin-bottom: 15px;
       text-align: center;
-      padding: 15px;
+    }
+    .album-art img {
+      max-width: 100%;
+      border-radius: 4px;
+    }
+    .event-details {
+      flex: 1;
+      text-align: left;
+    }
+    .event-details h2 {
+      margin: 0 0 10px 0;
+      font-size: 20px;
+    }
+    .event-details .small {
       font-size: 14px;
       color: #666;
     }
+    .ticket-summary {
+      padding: 20px;
+    }
+    .ticket-summary .item {
+      margin-bottom: 10px;
+    }
+    .label {
+      color: #555;
+      font-weight: bold;
+    }
+    .value {
+      margin-left: 5px;
+    }
+    .total {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .footer {
+      background-color: #f9f9f9;
+      padding: 15px 20px;
+      font-size: 13px;
+      color: #777;
+      text-align: center;
+    }
 
-    .ticket {
-      background-color: #f1f9ff;
-      border: 1px dashed #0071ce;
-      padding: 15px;
-      border-radius: 6px;
+    @media (max-width: 600px) {
+      .event-info {
+        flex-direction: column;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="container">
+  <div class="wrapper">
     <div class="header">
-      <h1>Resumen de tu compra</h1>
+      <h1>Confirmación de Compra</h1>
     </div>
-
-    <div class="content">
-      <div class="section">
-        <h2>Detalles del Evento</h2>
-        <div class="info"><span class="label">Artista:</span> Conan Gray</div>
-        <div class="info"><span class="label">Gira:</span> The Wishbone Pajama Show Tour</div>
-        <div class="info"><span class="label">Fecha:</span> 2 de diciembre de 2025</div>
-        <div class="info"><span class="label">Hora:</span> 21:00 hrs</div>
-        <div class="info"><span class="label">Lugar:</span> Auditorio Telmex, Zapopan, Jalisco</div>
+    <div class="event-info">
+      <div class="album-art">
+        <img src="https://www.livenation.com/_next/image?url=https%3A%2F%2Fs1.ticketm.net%2Fdam%2Fa%2F221%2F8202a9fe-de0b-4b27-a882-fd4acbef3221_TABLET_LANDSCAPE_LARGE_16_9.jpg&w=1319&q=70" alt="Wishbone Pajama Show - Conan Gray">
       </div>
-
-      <div class="section">
-        <h2>Tu Boleto</h2>
-        <div class="ticket">
-          <div class="info"><span class="label">Zona:</span> Zona Roja</div>
-          <div class="info"><span class="label">Fila:</span> B</div>
-          <div class="info"><span class="label">Asiento:</span> 12</div>
-          <div class="info"><span class="label">Código QR:</span> [QR Placeholder]</div>
-          <div class="info"><span class="label">Número de orden:</span> 9876543210</div>
-        </div>
-      </div>
-
-      <div class="section">
-        <h2>Resumen de Pago</h2>
-        <div class="info"><span class="label">Precio del boleto:</span> $1,400.00 MXN</div>
-        <div class="info"><span class="label">Cargo por servicio:</span> $180.00 MXN</div>
-        <div class="info"><span class="label">Total pagado:</span> <strong>$1,580.00 MXN</strong></div>
-        <div class="info"><span class="label">Método de pago:</span> Tarjeta de crédito (•••• 5678)</div>
+      <div class="event-details">
+        <h2>Conan Gray – The Wishbone Pajama Show Tour</h2>
+        <div class="small">Auditorio Telmex • Zapopan, Jalisco</div>
+        <div class="small">2 de diciembre de 2025 • 21:00 hrs</div>
       </div>
     </div>
-
+    <div class="ticket-summary">
+      <div class="item">
+        <span class="label">Zona:</span><span class="value">Zona Roja</span>
+      </div>
+      <div class="item">
+        <span class="label">Fila:</span><span class="value">B</span>
+      </div>
+      <div class="item">
+        <span class="label">Asiento:</span><span class="value">12</span>
+      </div>
+      <div class="item">
+        <span class="label">Número de orden:</span><span class="value">9876543210</span>
+      </div>
+      <div class="item">
+        <span class="label">Método de pago:</span><span class="value">Tarjeta de crédito (•••• 5678)</span>
+      </div>
+      <div class="item">
+        <span class="label">Precio del boleto:</span><span class="value">$1,400.00 MXN</span>
+      </div>
+      <div class="item">
+        <span class="label">Cargo por servicio:</span><span class="value">$180.00 MXN</span>
+      </div>
+      <div class="total">
+        Total pagado: $1,580.00 MXN
+      </div>
+    </div>
     <div class="footer">
-      Gracias por tu compra en Ticketmaster.<br>
+      Gracias por comprar en Ticketmaster. <br>
+      Este correo es sólo confirmación; por favor lleva una identificación oficial al evento. <br>
       ¡Nos vemos en el show!
     </div>
   </div>
