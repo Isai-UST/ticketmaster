@@ -1,142 +1,161 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ticketmaster - Confirmación de Compra</title>
-  <style>
-    body {
-      background-color: #f4f4f4;
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      color: #333;
-    }
-    .wrapper {
-      max-width: 650px;
-      margin: 30px auto;
-      background-color: #fff;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      overflow: hidden;
-    }
-    .header {
-      background-color: #005eb8;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    .header h1 {
-      margin: 0;
-      font-size: 24px;
-      font-weight: normal;
-    }
-    .event-info {
-      display: flex;
-      flex-wrap: wrap;
-      padding: 20px;
-      border-bottom: 1px solid #eee;
-    }
-    .album-art {
-      flex: 0 0 100%;
-      margin-bottom: 15px;
-      text-align: center;
-    }
-    .album-art img {
-      max-width: 100%;
-      border-radius: 4px;
-    }
-    .event-details {
-      flex: 1;
-      text-align: left;
-    }
-    .event-details h2 {
-      margin: 0 0 10px 0;
-      font-size: 20px;
-    }
-    .event-details .small {
-      font-size: 14px;
-      color: #666;
-    }
-    .ticket-summary {
-      padding: 20px;
-    }
-    .ticket-summary .item {
-      margin-bottom: 10px;
-    }
-    .label {
-      color: #555;
-      font-weight: bold;
-    }
-    .value {
-      margin-left: 5px;
-    }
-    .total {
-      margin-top: 20px;
-      font-size: 18px;
-      font-weight: bold;
-    }
-    .footer {
-      background-color: #f9f9f9;
-      padding: 15px 20px;
-      font-size: 13px;
-      color: #777;
-      text-align: center;
-    }
 
-    @media (max-width: 600px) {
-      .event-info {
-        flex-direction: column;
-      }
-    }
-  </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ticketmaster - Confirmación de Compra</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .wrapper {
+            max-width: 650px;
+            margin: 30px auto;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .header {
+            background-color: #005eb8;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: normal;
+        }
+
+        .event-info {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .album-art {
+            flex: 0 0 100%;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .album-art img {
+            max-width: 100%;
+            border-radius: 4px;
+        }
+
+        .event-details {
+            flex: 1;
+            text-align: left;
+        }
+
+        .event-details h2 {
+            margin: 0 0 10px 0;
+            font-size: 20px;
+        }
+
+        .event-details .small {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .ticket-summary {
+            padding: 20px;
+        }
+
+        .ticket-summary .item {
+            margin-bottom: 10px;
+        }
+
+        .label {
+            color: #555;
+            font-weight: bold;
+        }
+
+        .value {
+            margin-left: 5px;
+        }
+
+        .total {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .footer {
+            background-color: #f9f9f9;
+            padding: 15px 20px;
+            font-size: 13px;
+            color: #777;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .event-info {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
+
 <body>
-  <div class="wrapper">
-    <div class="header">
-      <h1>Confirmación de Compra</h1>
+    <div class="wrapper">
+        <div class="header">
+            <h1>Confirmación de Compra</h1>
+        </div>
+        <div class="event-info">
+            <div class="album-art">
+                <img src="https://s1.ticketm.net/dam/a/221/8202a9fe-de0b-4b27-a882-fd4acbef3221_TABLET_LANDSCAPE_LARGE_16_9.jpg"
+                    alt="Conan Gray – The Wishbone Pajama Show">
+            </div>
+            <div class="event-details">
+                <h2>Conan Gray – The Wishbone Pajama Show Tour</h2>
+                <div class="small">Auditorio Telmex • Zapopan, Jalisco</div>
+                <div class="small">17 de octubre de 2025 • 20:00 hrs</div>
+            </div>
+        </div>
+        <div class="ticket-summary">
+            <div class="item">
+                <span class="label">Zona:</span><span class="value">Zona Roja</span>
+            </div>
+            <div class="item">
+                <span class="label">Fila:</span><span class="value">B</span>
+            </div>
+            <div class="item">
+                <span class="label">Asiento:</span><span class="value">12</span>
+            </div>
+            <div class="item">
+                <span class="label">Número de orden:</span><span class="value">9876543210</span>
+            </div>
+            <div class="item">
+                <span class="label">Método de pago:</span><span class="value">Tarjeta de crédito (•••• 5678)</span>
+            </div>
+            <div class="item">
+                <span class="label">Precio del boleto:</span><span class="value">$1,400.00 MXN</span>
+            </div>
+            <div class="item">
+                <span class="label">Cargo por servicio:</span><span class="value">$180.00 MXN</span>
+            </div>
+            <div class="total">
+                Total pagado: $1,580.00 MXN
+            </div>
+        </div>
+        <div class="footer">
+            Gracias por comprar en Ticketmaster. <br>
+            Este correo es sólo confirmación; por favor lleva una identificación oficial al evento. <br>
+            ¡Nos vemos en el show!
+        </div>
     </div>
-    <div class="event-info">
-      <div class="album-art">
-        <img src="https://www.livenation.com/_next/image?url=https%3A%2F%2Fs1.ticketm.net%2Fdam%2Fa%2F221%2F8202a9fe-de0b-4b27-a882-fd4acbef3221_TABLET_LANDSCAPE_LARGE_16_9.jpg&w=1319&q=70" alt="Wishbone Pajama Show - Conan Gray">
-      </div>
-      <div class="event-details">
-        <h2>Conan Gray – The Wishbone Pajama Show Tour</h2>
-        <div class="small">Auditorio Telmex • Zapopan, Jalisco</div>
-        <div class="small">2 de diciembre de 2025 • 21:00 hrs</div>
-      </div>
-    </div>
-    <div class="ticket-summary">
-      <div class="item">
-        <span class="label">Zona:</span><span class="value">Zona Roja</span>
-      </div>
-      <div class="item">
-        <span class="label">Fila:</span><span class="value">B</span>
-      </div>
-      <div class="item">
-        <span class="label">Asiento:</span><span class="value">12</span>
-      </div>
-      <div class="item">
-        <span class="label">Número de orden:</span><span class="value">9876543210</span>
-      </div>
-      <div class="item">
-        <span class="label">Método de pago:</span><span class="value">Tarjeta de crédito (•••• 5678)</span>
-      </div>
-      <div class="item">
-        <span class="label">Precio del boleto:</span><span class="value">$1,400.00 MXN</span>
-      </div>
-      <div class="item">
-        <span class="label">Cargo por servicio:</span><span class="value">$180.00 MXN</span>
-      </div>
-      <div class="total">
-        Total pagado: $1,580.00 MXN
-      </div>
-    </div>
-    <div class="footer">
-      Gracias por comprar en Ticketmaster. <br>
-      Este correo es sólo confirmación; por favor lleva una identificación oficial al evento. <br>
-      ¡Nos vemos en el show!
-    </div>
-  </div>
 </body>
+
 </html>
